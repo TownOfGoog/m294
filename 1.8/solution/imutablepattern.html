@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let Names=["Franz", "Jenny", 
+        "Karen", "Joseph", "Richard", "Florenze"];
+        console.log("heif");
+
+        i = 1;
+        while (i >= Names.length){
+            console.log(Names[i]);
+            i++;
+        };
+        Names.sort();
+
+        toUpper = function(x){ 
+        return x.toUpperCase();
+        };
+        toEven = function(x){
+            return x % 2
+        }
+        ha = Names.map(toUpper);
+        
+        console.log(ha[1])
+
+        const numbers = [4,76,54,3,76,5]
+        even = numbers.filter(toEven)
+        console.log(even[1])
+        
+
+        var str = "A";
+        var n = str.charCodeAt(0) - 65;
+        console.log(n);
+        o=1
+        while (o < (Names[0].length)){
+            Names[0].charAt(o) = Names[0].charCodeAt(o) - 65;
+            
+        }
+
+    </script>
+</body>
+</html>
