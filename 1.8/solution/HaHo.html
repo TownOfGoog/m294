@@ -1,21 +1,49 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
-    <script src="hihi.js" type="text/javascript"></script> 
+
+    <script>
+
+        const names = ['ANNE', 'Jenny', 'Karen', 'Joseph', 'Richard', 'Florenze'];
+
+
+
+        function toCaeser (input){
+
+            const characters = input.split("");
+
+            const newCharacters = characters.map((characters) => {
+
+                return String.fromCharCode((characters.charCodeAt(0) -65 + 13 % 26) + 65);  
+
+            });
+
+            return newCharacters.join("");  
+
+        }
+
+
+
+        console.log(toCaeser(names[0]));
+
+    </script>
+
 </head>
+
 <body>
-            <div>
-                <div id="guide"></div>
-                <canvas width="50" height="50"
-                 id="canvas"></canvas>
-            </div>
-            <div>
-                <label for="colorInput">Set Color: </label>
-                <input type="color" id=""
-            </div>
+
+   
+
 </body>
+
 </html>
